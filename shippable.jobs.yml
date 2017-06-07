@@ -1,0 +1,5 @@
+jobs:
+  - type: runSh
+    name: hello
+    steps:
+      - TASK: echo "Hello, World!"
