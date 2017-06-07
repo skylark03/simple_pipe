@@ -9,3 +9,8 @@ jobs:
     steps:
       - TASK:
         - script: echo "Hello, World! Again."
+  - type: runSh
+    name: hello_again_3
+    steps:
+      - TASK:
+        - script: echo "Hello, World! Again. Thrice."
