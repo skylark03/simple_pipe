@@ -4,13 +4,8 @@ jobs:
     steps:
       - TASK:
         - script: echo "Hello, World!"
-  - type: runSh
-    name: hello_again
-    steps:
-      - TASK:
-        - script: echo "Hello, World! Again."
-  - type: runSh
-    name: hello_again_3
-    steps:
-      - TASK:
-        - script: echo "Hello, World! Again. Thrice."
+#  - type: runSh
+#    name: hello_again
+#    steps:
+#      - TASK:
+#        - script: echo "Hello, World! Again."
