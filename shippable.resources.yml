@@ -1,0 +1,7 @@
+resources:
+  - name: simple_pipe_repo
+    type: gitRepo
+    integration: skylark03-gh
+    pointer:
+      sourceName: skylark03/simple_pipe
+      branch: master
