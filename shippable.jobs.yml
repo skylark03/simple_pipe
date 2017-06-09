@@ -7,7 +7,7 @@ jobs:
       - TASK:
         - script: echo "Hello, World!"
         - script: env | grep "SIMPLE_PIPE_REPO"
-        - script: cat $SIMPLE_PIPE_REPO_PATH/foo.json | jq .
+        - script: cat $SIMPLE_PIPE_REPO_PATH/gitRepo/foo.json | jq .
   - type: runSh
     name: hello_again
     steps:
