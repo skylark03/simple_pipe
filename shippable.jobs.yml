@@ -6,7 +6,7 @@ jobs:
         switch: off
       - TASK:
         - script: echo "Hello, World!"
-        - script: cat foo.json | jq
+        - script: cat foo.json | jq .
   - type: runSh
     name: hello_again
     steps:
