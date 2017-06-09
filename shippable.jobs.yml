@@ -6,6 +6,7 @@ jobs:
         switch: off
       - TASK:
         - script: echo "Hello, World!"
+        - script: env | grep "SIMPLE_PIPE_REPO"
         - script: cat $SIMPLE_PIPE_REPO_PATH/foo.json | jq .
   - type: runSh
     name: hello_again
