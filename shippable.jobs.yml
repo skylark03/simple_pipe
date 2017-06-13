@@ -8,10 +8,10 @@ jobs:
         - script: echo "Hello, World!"
         - script: env | grep "SIMPLE_PIPE_REPO"
         - script: cat $SIMPLE_PIPE_REPO_PATH/gitRepo/foo.json | jq .
-#  - type: runSh
-#    name: hello_again
-#    steps:
+  - type: runSh
+    name: hello_again
+    steps:
       #- IN: simple_pipe_repo
       #  switch: off
-#      - TASK:
-#        - script: echo "Hello, World! Again."
+      - TASK:
+        - script: echo "Hello, World! Again."
