@@ -11,5 +11,7 @@ jobs:
   - type: runSh
     name: hello_again
     steps:
+      - IN: simple_pipe_repo
+        switch: off
       - TASK:
         - script: echo "Hello, World! Again."
