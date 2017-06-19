@@ -9,8 +9,8 @@ jobs:
         - script: env | grep "SIMPLE_PIPE_REPO"
         - script: cat $SIMPLE_PIPE_REPO_PATH/gitRepo/foo.json | jq .
     flags:
-      - foo
-      - bar
+      - alpha
+      - gamma
   - type: runSh
     name: hello_again
     steps:
@@ -19,4 +19,12 @@ jobs:
       - TASK:
         - script: echo "Hello, World! Again."
     flags:
-      - foo
+      - alpha
+      - charlie
+      - beta
+      - delta
+      - foxtrot
+      - echo
+      - golf
+      - india
+      - hotel
