@@ -8,6 +8,9 @@ jobs:
         - script: echo "Hello, World!"
         - script: env | grep "SIMPLE_PIPE_REPO"
         - script: cat $SIMPLE_PIPE_REPO_PATH/gitRepo/foo.json | jq .
+    flags:
+      - foo
+      - bar
   - type: runSh
     name: hello_again
     steps:
@@ -15,3 +18,5 @@ jobs:
         switch: off
       - TASK:
         - script: echo "Hello, World! Again."
+    flags:
+      - foo
