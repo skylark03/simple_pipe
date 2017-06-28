@@ -5,4 +5,7 @@ resources:
     pointer:
       sourceName: skylark03/simple_pipe
       branch: master
-# dummy edit      
+  - name: nightly
+    type: time
+    seed:
+      interval: "0 23 * * *"
